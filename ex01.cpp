@@ -12,7 +12,7 @@ int busca_sequencial(int lista[], int tamanho, int alvo) {
     for( int i = 0; i < tamanho; i++){
         printf("\nProcurando na lista a posicao [%d] do mesmo %d == %d\n", i, lista[i], alvo);
         if( lista[i] != alvo){
-            printf("O numero %d e refente a matricula do fulano\n", lista[i], alvo);
+            printf("O numero %d e refente a matricula do fulano\n", lista[i]);
         }
         if( lista[i] == alvo){
 
