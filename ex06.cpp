@@ -5,12 +5,12 @@
 // •Retorne a posição e o nome encontrado.
 
 #include <stdio.h>
-#include <string.h> //não sabia dessa biblioteca
+#include <string.h> //biblioteca de strings
 
-int buscaSequencial(const char* lista[], int tamanho, const char* alvo){
+int buscaSequencial(const char* lista[], int tamanho, const char* alvo){ // Essa const char* é um ponteiro para uma string que não pode ser modificada.
     for (int i = 0; i < tamanho; i++){
 
-        if (strcmp(lista[i], alvo) != 0){
+        if (strcmp(lista[i], alvo) != 0){ // Comparacao entre duas strings
             printf("\nO nome %s e diferente do nome %s\n", lista[i], alvo);
         }
 
